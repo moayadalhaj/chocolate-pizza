@@ -1,7 +1,7 @@
 body {
   width: 900px;
   display: grid;
-  grid-template-rows: 100px 1fr 200px;
+  grid-template-rows: 100px 1fr 100px;
   margin: auto;
 }
 .my-header {
@@ -21,6 +21,7 @@ header h2 {
   top: 25px;
   font-family: 'Yellowtail', cursive;
   font-size: 40px;
+  font-weight: 700;
 }
 header h6 {
   position: absolute;
@@ -28,11 +29,112 @@ header h6 {
   top: 65px;
   font-family: 'Work Sans', sans-serif;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
+  color: grey;
 }
 header hr {
   display: block;
   border: none;
   height: 10px;
   background-image: url('../img/hr-img.png');
+}
+main {
+  margin-top: 75px;
+}
+main h2 {
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+main .print-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: grey;
+  margin-bottom: 25px;
+}
+main .text {
+  margin-top: 25px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+main .text p {
+  text-indent: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: grey;
+}
+section img {
+  z-index: -1;
+  position: absolute;
+}
+.checklist {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.checklist form {
+  margin-top: 33px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-family: 'Patrick Hand', cursive;
+  color: grey;
+}
+.checklist ul li {
+  padding-bottom: 10px;
+}
+main hr {
+  margin-top: 30px;
+  display: block;
+  border: none;
+  height: 10px;
+  background-image: url('../img/hr-img.png');
+}
+main .feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.feedback h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.feedback p {
+  font-size: 18px;
+  color: grey;
+}
+.feedback button {
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  margin-top: 10px;
+  color: #fff;
+  border: none;
+  background: #f44336;
+}
+footer hr {
+  border-top: 6px black;
+}
+footer img {
+  position: relative;
+  left: 47%;
+  transform: translateY(-75%);
+  margin-bottom: 15px;
+}
+footer p {
+  text-align: center;
+  justify-content: center;
+  color: grey;
+  padding-bottom: 10px;
+}
+input[type='checkbox']:checked + label {
+  text-decoration: line-through;
 }
