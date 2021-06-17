@@ -1,0 +1,38 @@
+body {
+  width: 900px;
+  display: grid;
+  grid-template-rows: 100px 1fr 200px;
+  margin: auto;
+}
+.my-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.icons img:nth-child(6) {
+  padding-right: 10px;
+}
+header h2 {
+  position: absolute;
+  left: 24%;
+  top: 25px;
+  font-family: 'Yellowtail', cursive;
+  font-size: 40px;
+}
+header h6 {
+  position: absolute;
+  left: 24%;
+  top: 65px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+}
+header hr {
+  display: block;
+  border: none;
+  height: 10px;
+  background-image: url('../img/hr-img.png');
+}
