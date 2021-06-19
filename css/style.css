@@ -120,12 +120,21 @@ main .feedback {
   border: none;
   background: #f44336;
 }
+footer div {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
 footer hr {
   border-top: 6px black;
+  border-left: 2px black;
+  width: 50%;
 }
+
 footer img {
   position: relative;
-  left: 47%;
+  left: 48%;
   transform: translateY(-75%);
   margin-bottom: 15px;
 }
